@@ -450,7 +450,86 @@ margin-bottom:60px;
 
     </style>
     
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+  
+  <h3><i class="fa fa-th"></i> stack board</h3></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+      
+      
+       <a class="nav-link" href="#" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-danger"> 3</span></a>
+
+     
+    <div class="dropdown">
+    <div class="dropdown-menu" style="right:0; left: auto; font-size:12px;">
     
+    
+    <a class="dropdown-item" style="color:; font-size:20px;" data-toggle="modal" href="#createaccount"><i class="fa fa-bell"></i> Alert center</a>
+      
+      <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> <strong>Welcome to stack board!</strong>
+      <br>
+      Thank you for trying stack board! <br>Take and tour and find out...</a>
+     
+     
+     <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> <strong>Welcome to stack board!</strong>
+      <br>
+      Thank you for trying stack board!<br> Take and tour and find out...</a>
+     
+     
+     
+     
+     <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> <strong>Welcome to stack board!</strong>
+      <br>
+      Thank you for trying stack board!<br> Take and tour and find out...</a>
+      
+      
+       <hr>
+      <center><a class="dropdown-item" style="color:blue;" data-toggle="modal" href="#createaccount">View all alerts</a></center>
+    </div>
+</div>
+      
+      </li>
+      
+     
+        
+        
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
     
     
     
@@ -466,7 +545,9 @@ margin-bottom:60px;
         <div class="form-group">
         <input type="text" id="filterInput" class="form-control" placeholder="Search stacks...">
     </div>
-    
+    <div id="noResultsMessage" class="alert alert-warning text-center d-none">
+    No apps found... Looking for an app? <a href="#">Try searching</a>
+</div>
 
 	      <div class="row" id="cardContainer">
           
@@ -615,26 +696,112 @@ margin-bottom:60px;
 
 	  </main>
 
-	  <div class="container is-big section-cta to-reveal">
-	    <div class="container-fluid fancy-border">
-	      <div class="row">
-	        <div class="col-lg-12 block-cta align-middle black-bg">
-	          <h3>Neon Glow Bootstrap Theme</h3>
-	          <p>Glowing bootstrap theme</p>
-	          <a href="#" class="fancy-button">Call to Action</a>
-
-	        </div>
-	      </div>
-	    </div>
-	  </div>
+	<!-- footer start -->
+    <footer class="bg-dark text-light py-5 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <h3 class="mb-0"><i class="fas fa-dollar-sign"></i>earn</h3>
+                            <small class="d-block text-muted">© 2018-2019</small>
+                            <small class="text-muted">All Rights Reserved.</small>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-9">
+                            
+                            <div class="row no-gutters">
+                                <div class="col-6 col-lg-3">
+                                     <h5>Features</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Ready to ship</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Light weight</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted"> Responsive</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Inner Pages</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h5>Resources</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Angular</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Java</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Camunda API</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Postman</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                             
+                                <div class="col-6 col-lg-3">
+                                     <h5>Help</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Forum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Site map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h5>About</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Privact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Terms</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Investment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+  
+      
 
 	</div>
     
     <script>
-   document.getElementById('filterInput').addEventListener('input', function () {
+ document.getElementById('filterInput').addEventListener('input', function () {
     const filterValue = this.value.toLowerCase();
     const cards = document.querySelectorAll('.card-item');
-    
+    let hasMatch = false; // Flag to track if any cards are visible
+
     cards.forEach(card => {
         const cardText = card.innerText.toLowerCase();
         const cardCategory = card.getAttribute('data-category').toLowerCase();
@@ -642,10 +809,20 @@ margin-bottom:60px;
         // Check if the filter value matches either the card text or category
         if (cardText.includes(filterValue) || cardCategory.includes(filterValue)) {
             card.classList.remove('d-none');
+            hasMatch = true; // A match is found
         } else {
             card.classList.add('d-none');
         }
     });
+
+    // Show or hide the "No Results" message based on matches
+    const noResultsMessage = document.getElementById('noResultsMessage');
+    if (hasMatch) {
+        noResultsMessage.classList.add('d-none');
+    } else {
+        noResultsMessage.classList.remove('d-none');
+    }
 });
+
 
     </script>
